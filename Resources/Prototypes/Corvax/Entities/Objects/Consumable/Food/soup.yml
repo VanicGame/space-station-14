@@ -26,3 +26,13 @@
               Quantity: 10
             - ReagentId: Protein
               Quantity: 20
+
+- type: entity
+  name: clown horn 2
+  parent: BaseItem
+  id: ClownHornnn
+  description: It goes honk honk!
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/bikehorn.rsi
+    state: icon
