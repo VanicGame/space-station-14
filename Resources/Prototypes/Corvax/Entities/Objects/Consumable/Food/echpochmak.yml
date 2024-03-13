@@ -1,44 +1,22 @@
-#- type: entity
-  #name: echpochmak
-  #parent: FoodInjectableBase
-  #id: FoodEchpochmak
-  #description: Juicy baked triangle. Favorite delicacy of the Illuminati.
-  #components:
-    #- type: FlavorProfile
-      #flavors:
-        #- meaty
-        #- onion
-    #- type: Sprite
-      #sprite: Corvax/Objects/Consumable/Food/echpochmak.rsi
-      #layers:
-        #- state: icon
-    #- type: SolutionContainerManager
-      #solutions:
-        #food:
-          #maxVol: 20
-          #reagents:
-            #- ReagentId: Nutriment
-              #Quantity: 10
-            #- ReagentId: Protein
-              #Quantity: 10
-
 - type: entity
   name: echpochmak
-  parent: BaseItem
+  parent: FoodInjectableBase
   id: FoodEchpochmak
   description: Juicy baked triangle. Favorite delicacy of the Illuminati.
   components:
-  - type: Sprite
-    sprite: Corvax/Objects/Consumable/Food/echpochmak.rsi
-    state: icon
-
-- type: entity
-  name: clown horn
-  parent: BaseItem
-  id: ClownHorn
-  description: It goes honk honk!
-  components:
-  - type: Sprite
-    sprite: Objects/Fun/bikehorn.rsi
-    state: icon
- 
+    - type: FlavorProfile
+      flavors:
+        - meaty
+        - onion
+    - type: Sprite
+      sprite: Corvax/Objects/Consumable/Food/echpochmak.rsi
+      state: icon
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: Nutriment
+              Quantity: 10
+            - ReagentId: Protein
+              Quantity: 10
